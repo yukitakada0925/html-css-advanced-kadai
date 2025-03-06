@@ -1,0 +1,118 @@
+/* 全体設定 */
+body {
+  min-width: 375px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* PC用ナビゲーション */
+#nav-pc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#main-visual{
+  margin-left: 20PX;
+  margin-right: 20px;
+}
+#main-visual > img{
+  max-width: 100%;
+}
+
+#nav-pc .logo img {
+  height: 40px;
+}
+
+#nav-pc ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-pc ul li {
+  margin-left: 20px;
+}
+
+#nav-pc ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+/* スマホ用メニューアイコン */
+#menu-sp {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* スマホ用ナビゲーション */
+#nav-sp {
+  background-color: #ce933e;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 100;
+  padding: 20px;
+}
+
+#nav-sp ul {
+  padding-left: 0;
+}
+
+#nav-sp li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+/* 閉じるボタン */
+#close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* ロゴ */
+#logo-sp {
+  display: block;
+  margin-bottom: 30px;
+}
+
+/* スマホ用ナビゲーションのリンク */
+#nav-sp a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#nav-sp a:hover {
+  text-decoration: underline;
+}
+
+/* スマホ用レイアウト */
+@media screen and (max-width: 767px) {
+  #nav-pc >ul {
+      display: none;
+  }
+
+  #menu-sp {
+      display: block;
+  }
+}
+
+/* PC用レイアウト（SPメニューを非表示） */
+@media screen and (min-width: 768px) {
+  #menu-sp, #nav-sp {
+      display: none;
+  }
+}
