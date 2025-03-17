@@ -7,9 +7,6 @@ body {
 }
 
 /* PC用ナビゲーション */
-header {
-
-}
 
 #nav-pc {
 display: flex;
@@ -98,10 +95,8 @@ justify-content: space-between;
   #nav-pc >ul {
       display: none;
   }
-  
-
   #menu-sp {
-      display: block;
+      display: block;     
   }
 }
 
